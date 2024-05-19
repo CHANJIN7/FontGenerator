@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Font Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        .custom-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+
+        .custom-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center d-flex flex-column justify-content-center align-items-center" id="main-content">
+        <h1>KANG LAB</h1>
+        <h2>FONT GENERATOR</h2>
+        <p>Using our website<br>you can create your own fonts!</p>
+
+        <div>
+            <a href="#"><i class="fab fa-windows fa-2x mx-3"></i></a> <!-- Windows 아이콘 -->
+            <a href="#"><i class="fab fa-apple fa-2x mx-3"></i></a> <!-- Mac 아이콘 -->
+            <a href="#"><i class="fab fa-linux fa-2x mx-3"></i></a> <!-- Linux 아이콘 -->
+        
+        </div>
+
+        <!-- Form 추가 -->
+        <form class="form mt-5" action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="index-back">
+                <div class="title">
+            <div class="file-upload">
+            <label for="templateImage" class="file-upload-label">
+                <i class="fas fa-cloud-upload-alt"></i> Select File 
+            </label>
+            <input type="file" id="templateImage" name="templateImage" multiple>
+        </div>
+
+
+                <div>
+                    <input class="btn btn-light mt-3" type="submit" value="Upload">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

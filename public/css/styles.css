@@ -1,0 +1,263 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+}
+
+#main-content {
+  background-image: url('background.jpg');
+  /* 배경 이미지 경로를 실제 이미지 경로로 변경 */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #644141;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  font-size: 1em;
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  background-color: #644141;
+  /* 배경색을 어두운 갈색으로 설정 */
+  border: none;
+  color: white;
+  /* 텍스트 색상을 흰색으로 설정 */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #8B4513;
+  /* 호버 시 배경색을 갈색으로 설정 */
+}
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #644141;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-upload-label:hover {
+  background-color: #644141;
+}
+
+.file-upload-label i {
+  margin-right: 8px;
+}
+
+.images {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+  max-width: 30%;
+}
+
+.content {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+}
+
+.upload-back {
+  width: 600px;
+  background: #fff;
+  padding: 50px;
+  margin: 100px auto;
+  border-radius: 30px;
+  position: relative;
+}
+
+.down {
+  background: #644141;
+  margin-top: 30px;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0px;
+  cursor: pointer;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+#upload_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #b5651d;
+  /* 연한 갈색으로 설정 */
+  color: #644141;
+  /* 텍스트 색상을 흰색으로 설정 */
+  background-image: url('background.jpg');
+  /* 배경 이미지 추가 */
+  background-size: cover;
+  /* 배경 이미지를 창에 맞게 늘리기 */
+  background-position: center;
+  /* 배경 이미지를 가운데 정렬 */
+}
+
+#upload_container h2 {
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+.container {
+  padding-top: 20px;
+  align-items: center;
+}
+
+.content {
+  background-color: white;
+  padding: 30px;
+  margin: 0 auto 50px;
+  border-radius: 30px;
+  max-width: 600px;
+}
+
+.images {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  max-width: 30%;
+}
+
+.loader {
+  display: none;
+  margin: 20px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 3.5em;
+}
+
+.btn {
+  font-size: 1em;
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  background-color: #644141;
+  /* 배경색을 어두운 갈색으로 설정 */
+  border: none;
+  color: white;
+  /* 텍스트 색상을 흰색으로 설정 */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #b5651d;
+  /* 호버 시 배경색을 연한 갈색으로 설정 */
+}
+
+#status {
+  display: block;
+  text-align: center;
+}
+
+@-webkit-keyframes load7 {
+
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+@keyframes load7 {
+
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+/* Font Awesome CDN link */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.fa-2x {
+  color: #644141;
+  transition: color 0.3s;
+}
+
+.fa-2x:hover {
+  color: #000;
+}
